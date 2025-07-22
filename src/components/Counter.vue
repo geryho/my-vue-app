@@ -1,8 +1,23 @@
 <template>
   <p>Counter = {{ count }}</p>
-  <button @click="increment" class="mx-3 px-3">+</button>
-  <button @click="decrement" class="mx-3 px-3">-</button>
-  <button @click="count = 0" class="mx-3 px-3">Reset</button>
+  <button
+    @click="increment"
+    class="mx-5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-8 border border-blue-500 hover:border-transparent rounded"
+  >
+    +
+  </button>
+  <button
+    @click="decrement"
+    class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-8 border border-blue-500 hover:border-transparent rounded"
+  >
+    -
+  </button>
+  <button
+    @click="count = 0"
+    class="mx-5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-5 border border-blue-500 hover:border-transparent rounded"
+  >
+    Reset
+  </button>
 </template>
 
 <script setup>
@@ -19,7 +34,7 @@ const decrement = () => {
 </script>
 
 <style type="text/tailwindcss">
-* {
+/* {
   border: 1px solid red;
-}
+}*/
 </style>
