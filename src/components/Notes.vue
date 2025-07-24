@@ -2,6 +2,13 @@
 import { ref } from "vue";
 const showModal = ref(false);
 const newNote = ref("");
+const notes = ref([]);
+const addNote = () => {
+  notes.value.push({
+    text: newNote.value,
+    date: new Date().toLocaleDateString(),
+  });
+};
 </script>
 
 <template>
